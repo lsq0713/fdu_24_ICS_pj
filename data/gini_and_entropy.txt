@@ -1,6 +1,7 @@
 stackoverflow:Gini Coefficient: 0.7479272898181802 Entropy: 10.708863444306598
 weixin:Gini Coefficient: 0.3699454449677416 Entropy: 9.058457599057414
 zhihu:Gini Coefficient: 0.5936886639452272  Entropy: 9.166406576890218
+xhs:Gini Coefficient: 0.6430094944842433 Entropy: 10.10597214446632
 
 为什么会出现基尼系数更高，但信息熵更低的情况？
 不同的度量标准：基尼系数和信息熵是两种不同的度量标准，分别用于衡量不同的属性。基尼系数关注的是分配的不平等程度，而信息熵关注的是信息的不确定性。
