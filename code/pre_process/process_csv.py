@@ -61,7 +61,7 @@ def process_csv(file_path, output_path, stop_words_path):
 
 # 主函数
 if __name__ == "__main__":
-    input_file = './data/xhs_daixie.csv'  # 输入的CSV文件路径
-    output_file = 'output.csv'  # 输出的CSV文件路径
+    input_file = './workspace/data.csv'  # 输入的CSV文件路径
+    output_file = './workspace/output.csv'  # 输出的CSV文件路径
     stop_words_file = 'baidu_stopwords.txt'  # 停用词文件路径
     process_csv(input_file, output_file, stop_words_file)
