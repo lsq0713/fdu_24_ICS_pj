@@ -15,9 +15,9 @@ def preprocess(text, stop_words):
 
 # 加载模型
 def load_model():
-    vectorizer = joblib.load("tfidf_vectorizer.pkl")
-    mlb = joblib.load("mlb_encoder.pkl")
-    model = joblib.load("multi_output_classifier.pkl")
+    vectorizer = joblib.load("./workspace/tfidf_vectorizer.pkl")
+    mlb = joblib.load("./workspace/mlb_encoder.pkl")
+    model = joblib.load("./workspace/multi_output_classifier.pkl")
     return vectorizer, mlb, model
 
 # 预测标签
@@ -54,7 +54,7 @@ def main():
             root.destroy()
             return
         # 加载停用词列表
-        file_path = "baidu_stopwords.txt"
+        file_path = "./workspace/baidu_stopwords.txt"
         with open(file_path, mode='r', encoding='utf-8') as file:
             stop_words = set(file.read().splitlines())
         # 预测标签
