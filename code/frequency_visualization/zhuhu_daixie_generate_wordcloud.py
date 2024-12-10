@@ -23,13 +23,13 @@ with open(stopwords_path, 'r', encoding='utf-8') as file:
 all_text = ''
 for sentence in sentences:
     words = jieba.lcut(sentence)
-    filtered_words = [word for word in words if word not in stopwords]
+    filtered_words = [word for word in words if word not in stopwords and len(word) > 1]
     all_text += ' '.join(filtered_words) + ' '
  
 # 生成词云
-path = 'C:/Windows/Fonts/STKAITI.TTF' # 设置支持中文的字体路径
+path = '/System/Library/Fonts/PingFang.ttc' # 设置支持中文的字体路径
 wordcloud = WordCloud(width=1600, height=1000, font_path=path,
-                      background_color='white').generate(all_text)
+                      background_color='white', regexp=r'\w{2,}').generate(all_text)
 wordcloud.to_file('../../data/zhihu/program_ghostwriting_wordcloud.png')
 
 # 显示词云
