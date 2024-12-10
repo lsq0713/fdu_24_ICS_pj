@@ -1,6 +1,6 @@
 import pandas as pd
 import re
-read_file_path = '../../data/data.csv'
+read_file_path = '../../data/stackoverflow/data.csv'
 df = pd.read_csv(read_file_path)
 
 # 定义一个函数来提取中文文本

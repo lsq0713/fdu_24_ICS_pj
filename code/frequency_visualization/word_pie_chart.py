@@ -1,6 +1,6 @@
 import os
 import matplotlib.pyplot as plt
-frequency_path = '../../data/word_count_output.txt'
+frequency_path = '../../data/stackoverflow/word_count_output.txt'
 with open(frequency_path,'r',encoding='utf-8')as file:
     lines = file.readlines()
 
