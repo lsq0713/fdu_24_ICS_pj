@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
 # 读取CSV文件
-file_path1 = '../../zhihu_data/程序代写+代写程序/search_comments.csv'
-file_path2 = '../../zhihu_data/程序代写+代写程序/search_contents.csv'
+file_path1 = '../../zhihu_data/daixie/search_comments.csv'
+file_path2 = '../../zhihu_data/daixie/search_contents.csv'
 df1 = pd.read_csv(file_path1, encoding='utf-8', header=None)
 df2 = pd.read_csv(file_path2, encoding='utf-8', header=None)
 
