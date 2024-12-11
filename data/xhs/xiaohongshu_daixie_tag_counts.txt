@@ -11,7 +11,7 @@ numpy: 11
 c: 7
 c++: 6
 android: 4
-spring: 4
+spring: 4    
 tensorflow: 3
 excel: 2
 vba: 2
@@ -19,9 +19,9 @@ linux: 2
 sql: 2
 opencv: 2
 html: 2
+r: 2
 spring-boot: 1
 javascript: 1
 css: 1
-r: 1
 php: 1
 android-studio: 1

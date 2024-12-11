@@ -3,7 +3,7 @@ import pandas as pd
 from wordcloud import WordCloud
 from collections import Counter
 
-df = pd.read_csv("../../data/xhs_daixie.csv")
+df = pd.read_csv("../../data/xhs/xhs_daixie.csv")
 
 df['words1'] = df['title'].apply(lambda x: x.split())
 df['words2'] = df['description'].apply(lambda x: x.split())
@@ -21,5 +21,5 @@ d = dict(word_counts.most_common(500))
 path = "C:/Windows/Fonts/STKAITI.TTF"
 wordcloud = WordCloud(width=1600, height=1000, background_color='white', 
                       font_path=path).generate_from_frequencies(d)
-wordcloud.to_file('../../data/xhs_daixie_wordcloud.png')
+wordcloud.to_file('../../data/xhs/xhs_daixie_wordcloud.png')
 
