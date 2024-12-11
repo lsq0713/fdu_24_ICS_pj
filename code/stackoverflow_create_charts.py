@@ -35,15 +35,15 @@ def plot_sorted_data(df, column_name, file_name, log_flag):
  
 def main():
     # 读取CSV文件
-    csv_file_path = '..\\data\\data.csv'
+    csv_file_path = '../data/stackoverflow/data.csv'
     df = pd.read_csv(csv_file_path)
     
     # 绘制'answers'的折线图
-    plot_sorted_data(df, 'answers', '../data/chart_answers.jpg', 0)
+    plot_sorted_data(df, 'answers', '../data/stackoverflow/chart_answers.jpg', 0)
     
     # 绘制'views'的折线图
-    plot_sorted_data(df, 'views', '../data/chart_views.jpg', 0)
-    plot_sorted_data(df, 'views', '../data/chart_views_log.jpg', 1)
+    plot_sorted_data(df, 'views', '../data/stackoverflow/chart_views.jpg', 0)
+    plot_sorted_data(df, 'views', '../data/stackoverflow/chart_views_log.jpg', 1)
  
 if __name__ == "__main__":
     main()
