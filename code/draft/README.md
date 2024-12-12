@@ -1,0 +1,8 @@
+- 1、在requirement.txt中安装依赖的python库
+- 2、在/config/base_config.py
+  - 对`KEYWORDS`进行修改从而进行知乎的关键词搜索
+  - 对`SAVE_DATA_OPTION`进行修改从而选择'csv'/'db'或'json'格式对爬取的数据进行存储
+  - 其他相关设置都在base_config.py中
+- 3、运行main.py，自动化登录后进行扫码后即可爬寻
+- 4、爬取后，创建了/data,数据存储在其中
+  - 可以根据
